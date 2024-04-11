@@ -25,8 +25,8 @@ public class Main {
 
         //Task 3
         System.out.println("\nTask 3");
-        int year = 2024;
-        if (year > 1584 && year % 4 == 0) {
+        int year = 1900;
+        if (year > 1584 && year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)) {
             System.out.println(year + " год является високосным");
         }
         else {
@@ -76,6 +76,5 @@ public class Main {
             default:
                 System.out.println("Такого месяца не существует");
         }
-
     }
 }
